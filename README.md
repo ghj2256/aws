@@ -13,3 +13,12 @@
 *	CodeCommit
 
 ## 아키텍처 구조
+![image](https://user-images.githubusercontent.com/46516796/103148285-608b9800-47a1-11eb-8520-d01d6458c51f.png)   
+1. 정적 웹 호스팅   
+HTML, CSS, JavaScript, 이미지 파일 등 사용자의 웹 브라우저에서 작동하는 리소스들을 Amplify를 이용해 정적 웹 리소스 호스팅을 한다.
+2. 사용자 관리   
+Cognito를 사용해 인증기능과 사용자 관리기능으로 백엔드 API를 보호한다.
+3. 서버리스 백엔드   
+DynamoDB로 API의 Lambda 함수가 데이터를 저장할 수 있는 공간을 제공한다.
+4. RESTful API   
+브라우저에서 실행되는 JavaScript는 Lambda 및 API Gateway를 사용하여 백엔드 API로부터 데이터를 송수신한다.
